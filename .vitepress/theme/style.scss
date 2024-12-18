@@ -1,0 +1,30 @@
+@import '@vue-flow/core/dist/style.css';
+@import '@vue-flow/core/dist/theme-default.css';
+
+/* 頁面編號 */
+.psn {
+  display: inline-block;
+  font-family: monospace;
+  font-size: 7pt;
+  font-style: normal;
+  margin-right: 5px;
+  color: var(--vp-c-brand);
+}
+
+/* vue-flow in dark mode */
+html.dark {
+  .vue-flow__node {
+    background-color: #333;
+    color: #fff;
+  }
+  .vue-flow__edge-textbg {
+    fill: #1b1b1f;
+  }
+  .vue-flow__edge-text {
+    fill: #fff;
+  }
+}
+
+:root {
+  --vp-sidebar-width: 320px !important;
+}

@@ -1,0 +1,103 @@
+/* 標籤 */
+.v-label {
+  display: inline-block;
+  margin-right: 5px;
+  margin-top: unset;
+  padding: 0 8px;
+  min-width: 15px;
+  line-height: 22px;
+  height: 22px;
+  border-radius: 3px;
+  vertical-align: middle;
+  color: #fff;
+  background-color: #88888866;
+  font-family: monospace;
+  font-size: 9pt;
+  font-style: normal;
+  text-align: center;
+
+  &.new {
+    background-color: #fed000d1;
+    &::after {
+      content: 'NEW';
+    }
+  }
+
+  &.nav {
+    margin-top: 4px;
+    padding: 0 3px;
+    vertical-align: top;
+    height: 15px;
+    line-height: 15px;
+    font-size: 7pt;
+
+    &.data-type {
+      &.interface {
+        &::after {
+          content: 'I';
+        }
+      }
+      &.enum {
+        &::after {
+          content: 'E';
+        }
+      }
+    }
+
+    &.api {
+      width: 30px;
+    }
+  }
+
+  /* data types */
+  &.data-type {
+    &.interface {
+      background-color: #0015ff99;
+      &::after {
+        content: 'Interface';
+      }
+    }
+    &.enum {
+      background-color: #00922799;
+      &::after {
+        content: 'Enum';
+      }
+    }
+  }
+
+  /* api methods */
+  &.api {
+    width: 60px;
+
+    &.get {
+      background-color: #0051ff99;
+      &::after {
+        content: 'GET';
+      }
+    }
+    &.put {
+      background-color: #ff770099;
+      &::after {
+        content: 'PUT';
+      }
+    }
+    &.post {
+      background-color: #00922799;
+      &::after {
+        content: 'POST';
+      }
+    }
+    &.patch {
+      background-color: #00a1b399;
+      &::after {
+        content: 'PATCH';
+      }
+    }
+    &.delete {
+      background-color: #c9002c99;
+      &::after {
+        content: 'DELETE';
+      }
+    }
+  }
+}

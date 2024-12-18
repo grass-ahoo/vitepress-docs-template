@@ -1,0 +1,31 @@
+{
+  "name": "labour-docs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "vitepress dev",
+    "build": "vitepress build",
+    "preview": "vitepress preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/grass-ahoo/labour-docs.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/grass-ahoo/labour-docs/issues"
+  },
+  "homepage": "https://github.com/grass-ahoo/labour-docs#readme",
+  "devDependencies": {
+    "vitepress": "^1.5.0"
+  },
+  "dependencies": {
+    "@vue-flow/core": "^1.41.5",
+    "sass": "^1.81.0",
+    "vitepress-plugin-tabs": "^0.5.0"
+  }
+}
